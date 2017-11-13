@@ -1,0 +1,151 @@
+/* Estils Generals */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #000;
+	background: #f2f2f2; 
+	font-size: 1em;
+    line-height: 1.5em;
+}
+
+h1 {
+	font-size: 2.3em;
+	line-height: 1.3em;
+	margin: 15px 0;
+	text-align: center;
+	font-weight: 300;
+}
+
+p {
+	margin: 0 0 1.5em 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/*
+ * Navegació
+ */
+ #menu {
+    padding: 0;
+    margin: 0;
+    border: 0; 
+    font-size:14px;
+    width: auto;
+    color:#faff00;
+}
+
+#menu a {
+    color: #000000;
+    line-height: 120%;
+    padding: 11px 28px 11px 28px;
+    width: 144px; 
+}
+
+#menu ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+}
+
+#menu ul {
+    position: relative;
+    z-index: 597;
+    float: left; 
+    width:auto;
+}
+
+#menu ul li {
+    float: left;
+    min-height: 1px;
+    line-height: 1em;
+    width:auto;
+}
+#menu>ul>li>a {
+    width:85px;
+    padding: -50px 0px 0px 0px;
+}
+#menu>ul>li>ul>li>ul>li>a:hover{
+    background-image: url('back-header.png');
+    background-repeat: repeat-x;
+    color: #faff00;
+}
+
+#menu ul ul {
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 598;
+    width: auto; 
+    top: 0;
+    left: 100%; 
+}
+
+#menu ul li.hover,
+#menu ul li:hover {
+    position: relative;
+    z-index: 599;
+    cursor: default; 
+}
+
+#menu ul li:hover > ul {
+    visibility: visible; 
+}
+
+#menu span, #menu a {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-decoration: none; 
+}
+
+#menu ul, #menu li {
+    width: 100%; 
+}
+
+#menu .has-sub, #menu .has-sub:hover:after { 
+    position: relative;
+    background-repeat: no-repeat;  
+    background-image: url(right-black.png); 
+    background-position: right center;
+}
+
+#menu ul ul li a:hover {
+    color: #666666;
+    background-repeat: no-repeat;  
+    background-image: url(right.png); 
+    background-position: right center;
+}
+
+/* Estils de contingut */
+#main-content {
+	background: white;
+	width: 90%;
+	max-width: 800px;
+	margin: 20px auto;
+	box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+#main-content header,
+#main-content .content {
+    padding: 40px;
+}
+
+/* Aquest CSS es d'Acpri */
+div#header {
+    background-image: url('back-header.png');
+    background-repeat: repeat-x;
+	left: 0;  /* La posem a l'esquerra... */
+	top: 0; /* ... a dalt... */
+	position: fixed; /* ... i la fixem */
+    width: 100%;
+ }
+ 
+
+
+
